@@ -414,3 +414,8 @@ h2 {
   .fa-linkedin::before{
     background-image: linear-gradient(135deg,#0e76a8 30%,#4f0b60 50%);
   }
+
+  .footer-basic a{
+    text-decoration: none;
+    color: inherit;
+  }
