@@ -19,6 +19,10 @@ body{
     min-height: 100vh;
 }
 
+h2 {
+    color: #4f0b60;
+}
+
 /*  */
 .btn{
     font-family: inherit;
