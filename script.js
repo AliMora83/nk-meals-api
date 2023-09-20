@@ -2,8 +2,15 @@ const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
+const searchInput = document.getElementById("search-input");
 
 // event listeners
+searchInput.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+      // Trigger the search when "Enter" is pressed
+      performSearch();
+    }
+  });
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
