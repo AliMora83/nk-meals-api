@@ -8,7 +8,7 @@ const searchInput = document.getElementById("search-input");
 searchInput.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
       // Trigger the search when "Enter" is pressed
-      performSearch();
+getMealList();
     }
   });
 searchBtn.addEventListener('click', getMealList);
