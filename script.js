@@ -73,6 +73,12 @@ function mealRecipeModal(meal){
         <h2 class = "recipe-title">${meal.strMeal}</h2>
         <p class = "recipe-category">${meal.strCategory}</p>
         <div class = "recipe-instruct">
+            <h3>Ingredients:</h3>
+            <ul>
+           <li>Hey</li>
+          </ul>
+        </div>
+        <div class = "recipe-instruct">
             <h3>Instructions:</h3>
             <p>${meal.strInstructions}</p>
         </div>
@@ -86,3 +92,9 @@ function mealRecipeModal(meal){
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 };
+
+// refresh on click
+document.getElementById('clear-btn').addEventListener('click', function() {
+    window.location.reload();
+  });
+  
