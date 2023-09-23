@@ -29,13 +29,15 @@ function getMealList(){
             data.meals.forEach(meal => {
                 html += `
                     <div class = "meal-item" data-id = "${meal.idMeal}">
-                        <div class = "meal-img">
-                            <img src = "${meal.strMealThumb}" alt = "food">
-                        </div>
-                        <div class = "meal-name">
-                            <h3>${meal.strMeal}</h3>
-                            <a href = "#" class = "recipe-btn">Get Recipe</a>
-                        </div>
+                    
+                            <div class = "meal-img">
+                                <img src = "${meal.strMealThumb}" alt = "food">
+                            </div>
+                            <div class = "meal-name">
+                                <h3>${meal.strMeal}</h3>
+                                <a href = "#" class = "recipe-btn">Get Recipe</a>
+                            </div>
+              
                     </div>
                 `;
             });
@@ -47,6 +49,8 @@ function getMealList(){
 
         mealList.innerHTML = html;
     });
+      // Show the meal list
+  document.querySelector('.meal-result').style.display = 'block';
 }
 
 
