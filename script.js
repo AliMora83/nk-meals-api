@@ -74,9 +74,7 @@ function mealRecipeModal(meal){
         <p class = "recipe-category">${meal.strCategory}</p>
         <div class = "recipe-instruct">
             <h3>Ingredients:</h3>
-            <ul>
-           <li>Hey</li>
-          </ul>
+   
         </div>
         <div class = "recipe-instruct">
             <h3>Instructions:</h3>
